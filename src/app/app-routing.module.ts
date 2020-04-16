@@ -1,3 +1,4 @@
+import { CoursesModule } from './courses/courses.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -6,18 +7,12 @@ import { BloqueadorGuard } from './guards/bloqueador.guard';
 
 
 const routes: Routes = [
-  { 
-    path: 'cursos', 
-    children: [
-      {
-        path: ':nome', 
-        component: CoursesListComponent,
-        canActivate: [BloqueadorGuard],
-        canDeactivate: [BloqueadorGuard]
-      }
-    ]
+  {
+    path: 'cursos',
+    loadChildren: 'src/app/courses/courses.module#CoursesModule',
+    canActivate: [BloqueadorGuard],
+    canLoad: [BloqueadorGuard]
   }
-  
 ];
 
 @NgModule({
