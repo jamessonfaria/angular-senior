@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7a402cc9d605ae71081fc0412c0886b0c368dc18" datatype="html">
+        <source>
+            Name
+        </source>
+        <target>
+            Nome
+        </target>
+        <conteomegroup purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description"> Exibe o nome do usuario logado no sistema</note>
+        <note priority="1" from="meaning">Nome de Usuario </note>
+      </trans-unit>
+      <trans-unit id="a8e28c55ed75ec7508b976ab34608f57e0a0ca6f" datatype="html">
+        <source>my name</source>
+        <target>meu nome</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">title do nome</note>
+      </trans-unit>
+      <trans-unit id="1a221c72f6310334969ccd9438c638676370ad8b" datatype="html">
+        <source>
+          Numero: <x id="ICU" equiv-text="{numeroPessoas, plural, =0 {...} =1 {...} other {...}}"/>
+        </source>
+        <target>
+          Numero: <x id="ICU" equiv-text="{numeroPessoas, plural, =0 {...} =1 {...} other {...}}"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e08e567ec9e140fafe05908f241c113ea23ab69d" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {ninguem } =1 {<x id="INTERPOLATION" equiv-text="{{numeroPessoas}}"/> pessoa } other {<x id="INTERPOLATION" equiv-text="{{numeroPessoas}}"/> pessoas } }</source>
+        <target>{VAR_PLURAL, plural, =0 {ninguem } =1 {<x id="INTERPOLATION" equiv-text="{{numeroPessoas}}"/> pessoa } other {<x id="INTERPOLATION" equiv-text="{{numeroPessoas}}"/> pessoas } }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="51cd5d27b0321f2c7f606eb3b77aa970154de992" datatype="html">
+        <source>
+          Animal: <x id="ICU" equiv-text="{genero, select, f {...} m {...} other {...}}"/>
+        </source>
+        <target>
+          Animal: <x id="ICU" equiv-text="{genero, select, f {...} m {...} other {...}}"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1f27dfe0c691cab559fe6c5b346158bbaedcfe86" datatype="html">
+        <source>{VAR_SELECT, select, f {leoa } m {leão } other {outro animal } }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

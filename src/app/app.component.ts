@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app-senior';
+
+  numeroPessoas = 10;
+  genero = 'k';
+  
 }
