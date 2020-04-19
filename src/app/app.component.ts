@@ -10,5 +10,4 @@ export class AppComponent {
 
   numeroPessoas = 10;
   genero = 'k';
-  
 }

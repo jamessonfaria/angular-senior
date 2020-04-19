@@ -8,13 +8,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class CoursesListComponent implements OnInit {
 
-  name = '' as string; 
+  name = '' as string;
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {
-    //this.name = this.activatedRoute.snapshot.params['nome'];
+     //this.name = this.activatedRoute.snapshot.params['nome'];
     this.activatedRoute.params.subscribe(
       params => {
         this.name = params['nome'];
