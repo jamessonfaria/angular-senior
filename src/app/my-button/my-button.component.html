@@ -1,0 +1,14 @@
+
+<button class="my-button" [@btnState]="myState" (click)="toggleState()">
+    <ng-content></ng-content>
+</button>
+
+<button (click)="toggleListState()">Open / Close</button>
+
+<ul class="my-list" [@listOpen]="myListState" (@listOpen.start)="animationStart($event)"
+    (@listOpen.done)="animationEnd($event)">
+    
+    <li @listState *ngFor="let item of myList; let i = index;" (click)="removeItem(i)">
+        {{ item }}
+    </li>
+</ul>
